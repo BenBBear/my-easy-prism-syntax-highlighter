@@ -1,48 +1,44 @@
 # Easy Prism Syntax Highlighter
 
-Tired to search for normal, easy to install programming code highlight plugin?
+Only add a slightly change to https://wordpress.org/plugins/easy-prism-syntax-highlighter/
 
-This one will help you to end this adventure.
+## Install
 
-It adds special shortcode `[code][/code]`, keyboard shortcut «alt+c» and button to Visual Editor.
+- Download as zip
+- Upload to your wordpress site and install
 
-If you want do define highlight syntax language, you may use direct lang param like `[code php][/code]`.
+## Usage
 
-Plugin will also highlight `<pre class='language-html'>…</pre>` and `<code class='language-html'></code>`, if you don't want to use shortcode.
+```html
+[code language="javascript"]
+   function fun(){
+    //stuff;
+   }
+[/code]
+```
+Follow the [https://en.support.wordpress.com/code/posting-source-code/](https://en.support.wordpress.com/code/posting-source-code/) standard `[code]`.
 
-# Installation
-
-1. Upload `easy-prism` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the "Plugins" menu in WordPress
-3. Use `[code][/code]` or simple `[c][/c]` shortcode to display highlighted code.
-
-# Frequently Asked Questions
-
-## How to highlight inline element
-
-It's simple. 
-
-If you write inline `[code][/code]` – it will be displayed inline.
-
-In case you put in one and more linebreaks "\n" – it will be displayed as block element.
+> **So It could work with wordpress client Blogo :-)**
 
 
 
-## Can I use this plugin with other syntax highlight?
-You may do what you want, but plugins author doesn't promise that any other syntax highlight plugin will work correctly with the original one.
 
-## Is it possible to add more capatibilites to this plugin?
-Of course. Write me to info@wpthy.com with subject "Feature request for Easy Prism Syntax Highlighter plugin" a letter and make request.
+## Original Usage
 
-# Screenshots
+```html
+[code javascript]
+   function fun(){
+    //stuff;
+   }
+[/code]
+```
 
-1. Visual Editor.
-2. Frontend block and inline.
 
-# Changelog 
-## 1.0.2
-Remove all tags inside `[code][/code]`, because while it's been inputed in Visual Editor it makes a lot of garbage.
-## 1.0.1 
-Nightly bugfixes. Respond for plugin user feedback.
-## 1.0 
-* Initial Commit
+## Attention
+
+I haven't touch the code of GUI tinymce code editor, so the gui won't work.
+
+
+## Credits
+
+All credits belong to the original author https://profiles.wordpress.org/cuamckuy/.
